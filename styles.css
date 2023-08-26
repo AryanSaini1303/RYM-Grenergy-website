@@ -271,6 +271,9 @@ body {
     align-items: center;
     z-index: 1;
 }
+.m2{
+    margin-left:-25rem;
+}
 
 .nav4Content {
     display: flex;
@@ -296,7 +299,6 @@ body {
         bottom: 100rem;
         opacity: 0;
     }
-
     100% {
         bottom: 5rem;
         opacity: 1;
@@ -314,7 +316,6 @@ body {
         bottom: 5rem;
         opacity: 1;
     }
-
     100% {
         bottom: 100rem;
         opacity: 0;
@@ -522,6 +523,7 @@ body {
         align-items: center;
         gap: 0;
         border-top-right-radius: 1.4rem;
+        border-bottom-left-radius:1.4rem;
     }
 
     .navbar__menu ul li a {
@@ -553,11 +555,13 @@ body {
     }
 
     .memberImage {
-        height: 5rem;
-        width: 5rem;
+        display: block;
+        height: 8rem;
+        width: 8rem;
         object-fit: contain;
-        border-radius: 2.5rem;
+        border-radius: 4rem;
         border: 0;
+        border:0.1rem solid black;
     }
 
     .memberName {
@@ -581,8 +585,49 @@ body {
         user-select: none;
         padding: 0 0.5rem;
     }
-
-    .bottom {
-        bottom: 5rem;
+    .m2{
+        top:5rem;
+        left:8rem;
+        gap:2rem;
+    }
+    .m1{
+        top:-5.5rem;
+        left:-6rem;
+        gap:2rem;
+    }
+    .nav4{
+        bottom:6.7rem;
+        right:1rem;
+    }
+    .memberName{
+        bottom:0.01rem;
+        font-size: 0.8rem;
+        text-align: center;
+        color: white;
+    }
+    .position{
+        bottom:0.01rem;
+        text-align: center;
+        font-size: 0.6rem;
+    }
+    @keyframes nav4Animation {
+        0%{
+            top:100rem;
+            opacity: 0;
+        }
+        100%{
+            bottom:6.7rem;
+            opacity: 1;
+        }
+    }
+    @keyframes nav4AnimationRev {
+        0% {
+            bottom: 5rem;
+            opacity: 1;
+        }
+        100% {
+            top: 100rem;
+            opacity: 0;
+        }
     }
 }
