@@ -16,7 +16,7 @@ if (mediaQuery.matches) {
         if (nav1Click==false && nav4Click==false){
             $(".front-layer").addClass("frontAnimation");
             $(".parallax").removeClass("parallax");
-            setTimeout(function () { $(".front-layer").fadeToggle() }, 300)
+            setTimeout(function () { $(".front-layer").fadeToggle() }, 300);
             $(".middle-layer").addClass("middleAnimation");
             $(".name").fadeTo("slow", 0);
             $(".nav1").addClass("nav1Animation");
@@ -24,6 +24,7 @@ if (mediaQuery.matches) {
         }
         else if ((nav4Click==true)){
             $(".nav4Content").addClass("nav4AnimationRev");
+            $(".team-heading").animate({opacity:"0"},"slow");
             $(".nav4Content").removeClass("nav4Animation");
             $(".nav1").addClass("nav1Animation");
             $(".nav1").removeClass("nav1AnimationRev");
@@ -32,10 +33,11 @@ if (mediaQuery.matches) {
         }
     })
     $(".bt4").on("click",function(){
+        $(".team-heading").animate({opacity:"1"},"slow");
         if (nav4Click==false && nav1Click==false){
             $(".front-layer").addClass("frontAnimation");
             $(".parallax").removeClass("parallax");
-            setTimeout(function () { $(".front-layer").fadeToggle() }, 300)
+            setTimeout(function () { $(".front-layer").fadeToggle() }, 300);
             $(".middle-layer").addClass("middleAnimation");
             $(".name").fadeTo("slow", 0);
             $(".nav4Content").addClass("nav4Animation");
@@ -48,6 +50,103 @@ if (mediaQuery.matches) {
             $(".nav4Content").removeClass("nav4AnimationRev");
             nav4Click=true;
             nav1Click=false;
+        }
+    })
+    var hover=false;
+    $(".Yograj").hover(function(){
+        if(hover==false){
+            $(".col1").removeClass("notOnHover");
+            $(".col1").addClass("onHover");
+            $(".Yograj").css("border-bottom-right-radius","0rem");
+            $(".col2").css("filter","blur(0.2rem)")
+            $(".col3").css("filter","blur(0.2rem)")
+            $(".col4").css("filter","blur(0.2rem)")
+            $(".info1").css("opacity","1");
+            $(".info1").css("border-bottom-right-radius","4rem");
+            hover=true;
+        }
+        else{
+            $(".col1").removeClass("onHover");
+            $(".col1").addClass("notOnHover");
+            $(".Yograj").css("border-bottom-right-radius","7rem");
+            $(".col2").css("filter","blur(0)");
+            $(".col3").css("filter","blur(0)");
+            $(".col4").css("filter","blur(0)");
+            $(".info1").css("opacity","0");
+            $(".info1").css("border-bottom-right-radius","0");
+            hover=false;
+        }
+    })
+    $(".Rohan").hover(function(){
+        if(hover==false){
+            $(".col2").removeClass("notOnHover");
+            $(".col2").addClass("onHover");
+            $(".Rohan").css("border-bottom-right-radius","0rem");
+            $(".col1").css("filter","blur(0.2rem)");
+            $(".col3").css("filter","blur(0.2rem)");
+            $(".col4").css("filter","blur(0.2rem)");
+            $(".info2").css("opacity","1");
+            $(".info2").css("border-bottom-right-radius","4rem");
+            hover=true;
+        }
+        else{
+            $(".col2").removeClass("onHover");
+            $(".col2").addClass("notOnHover");
+            $(".Rohan").css("border-bottom-right-radius","7rem");
+            $(".col1").css("filter","blur(0)");
+            $(".col3").css("filter","blur(0)");
+            $(".col4").css("filter","blur(0)");
+            $(".info2").css("opacity","0");
+            $(".info2").css("border-bottom-right-radius","0");
+            hover=false;
+        }
+    })
+    $(".Mohit").hover(function(){
+        if(hover==false){
+            $(".col3").removeClass("notOnHover");
+            $(".col3").addClass("onHover");
+            $(".Mohit").css("border-bottom-right-radius","0rem");
+            $(".col2").css("filter","blur(0.2rem)");
+            $(".col1").css("filter","blur(0.2rem)");
+            $(".col4").css("filter","blur(0.2rem)");
+            $(".info3").css("opacity","1");
+            $(".info3").css("border-bottom-right-radius","4rem");
+            hover=true;
+        }
+        else{
+            $(".col3").removeClass("onHover");
+            $(".col3").addClass("notOnHover");
+            $(".Mohit").css("border-bottom-right-radius","7rem");
+            $(".col2").css("filter","blur(0)");
+            $(".col1").css("filter","blur(0)");
+            $(".col4").css("filter","blur(0)");
+            $(".info3").css("opacity","0");
+            $(".info3").css("border-bottom-right-radius","0");
+            hover=false;
+        }
+    })
+    $(".Shubham").hover(function(){
+        if(hover==false){
+            $(".col4").removeClass("notOnHover");
+            $(".col4").addClass("onHover");
+            $(".Shubham").css("border-bottom-right-radius","0rem");
+            $(".col2").css("filter","blur(0.2rem)");
+            $(".col3").css("filter","blur(0.2rem)");
+            $(".col1").css("filter","blur(0.2rem)");
+            $(".info4").css("opacity","1");
+            $(".info4").css("border-bottom-right-radius","4rem");
+            hover=true;
+        }
+        else{
+            $(".col4").removeClass("onHover");
+            $(".col4").addClass("notOnHover");
+            $(".Shubham").css("border-bottom-right-radius","7rem");
+            $(".col2").css("filter","blur(0)");
+            $(".col3").css("filter","blur(0)");
+            $(".col1").css("filter","blur(0)");
+            $(".info4").css("opacity","0");
+            $(".info4").css("border-bottom-right-radius","0");
+            hover=false;
         }
     })
 }
