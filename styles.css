@@ -287,24 +287,36 @@ body {
     position: relative;
     transform: scale(1, 1);
     filter: blur(0);
+    display: flex;
+    flex-direction:column;
+    z-index:2;
 }
 
 .col2 {
     position: relative;
     transform: scale(1, 1);
     filter: blur(0);
+    display: flex;
+    flex-direction:column;
+    z-index:2;
 }
 
 .col3 {
     position: relative;
     transform: scale(1, 1);
     filter: blur(0);
+    display: flex;
+    flex-direction:column;
+    z-index:2;
 }
 
 .col4 {
     position: relative;
     transform: scale(1, 1);
     filter: blur(0);
+    display: flex;
+    flex-direction:column;
+    z-index:2;
 }
 
 .nav4Content {
@@ -321,7 +333,7 @@ body {
 }
 
 .nav4Animation {
-    animation: nav4Animation 1.5s;
+    animation: nav4Animation 1s;
     animation-fill-mode: forwards;
     animation-direction: normal;
 }
@@ -363,6 +375,7 @@ body {
     border-top-left-radius: 7rem;
     border-bottom-right-radius: 8rem;
     border-bottom: 2.8rem solid rgba(0, 0, 0, 0.679);
+    -webkit-user-drag: none;
 }
 
 .memberName {
@@ -445,11 +458,10 @@ body {
 .team-heading {
     position: relative;
     right: 1rem;
-    bottom: 15rem;
+    bottom: 150rem;
     font-size: 3rem;
     /* display: none; */
     font-family: 'Kalam', cursive;
-    opacity: 0;
     font-weight: bold;
     color: aliceblue;
     text-shadow: 0.5rem 0.5rem 1.5rem black;
@@ -768,6 +780,43 @@ body {
         100% {
             top: 100rem;
             opacity: 0;
+        }
+    }
+    .info{
+        top:4rem;
+        font-size: 0.6rem;
+        padding-top:6rem;
+        width: 88%;
+        z-index: -1;
+        height: 150%;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        /* word-spacing: 0.02rem; */
+        text-align:center;
+    }
+    .bigDp{
+        animation:bigDp 1s;
+        animation-fill-mode:forwards;
+    }
+    @keyframes bigDp {
+        0%{
+            transform:scale(1,1);
+        }
+        100%{
+            transform:scale(1.5,1.5);
+        }
+    }
+    .bigDpRev{
+        animation:bigDpRev 1s;
+        animation-fill-mode:forwards;
+        animation-direction:normal;
+    }
+    @keyframes bigDpRev {
+        0%{
+            transform:scale(1.5,1.5);
+        }
+        100%{
+            transform:scale(1,1);
         }
     }
 }
