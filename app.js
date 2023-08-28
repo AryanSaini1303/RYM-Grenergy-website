@@ -149,6 +149,122 @@ if (mediaQuery.matches) {
             hover = false;
         }
     })
+    var nav2Click = false;
+    $(".bt2").click(function () {
+        if (nav2Click == false) {
+            $(".year").css("opacity", "1");
+            $(".year").css("z-index", "1000");
+            nav2Click = true;
+        }
+        else {
+            $(".year").css("opacity", "0");
+            $(".year").css("z-index", "0");
+            nav2Click = false;
+        }
+    })
+    var year1Hover = false;
+    $(".year1").hover(function () {
+        if (year1Hover == false) {
+            $(".y1month").css("opacity", "1");
+            $(".y1month").css("z-index", "1000");
+            var y1month1Hover = false;
+            $(".y1month .month1").hover(function(){
+                if(y1month1Hover==false){
+                    $(".y1month").css("opacity","1");
+                    $(".y1month").css("z-index","1000");
+                    // var y1m1Event1=false;
+                    // if(y1m1Event1==false){
+                    //     $(".y1m1event").css("opacity","1");
+                    //     $(".y1m1event").css("z-index","1000");
+                    //     y1m1Event1=true;
+                    // }
+                    // else{
+                    //     $(".y1m1event").css("opacity","0");
+                    //     $(".y1m1event").css("z-index","0");
+                    //     y1m1Event1=false;
+                    // }
+                    y1month1Hover=true;
+                }
+                else{
+                    $(".y1month").css("opacity","0");
+                    $(".y1month").css("z-index","0");
+                    y1month1Hover=false;
+                }
+            })
+            var y1month2Hover=false;
+            $(".y1month .month2").hover(function(){
+                if(y1month2Hover==false){
+                    $(".y1month").css("opacity","1");
+                    $(".y1month").css("z-index","1000");
+                    y1month2Hover=true;
+                }
+                else{
+                    $(".y1month").css("opacity","0");
+                    $(".y1month").css("z-index","0");
+                    y1month2Hover=false;
+                }
+            })
+            var y1month3Hover=false;
+            $(".y1month .month3").hover(function(){
+                if(y1month3Hover==false){
+                    $(".y1month").css("opacity","1");
+                    $(".y1month").css("z-index","1000");
+                    y1month3Hover=true;
+                }
+                else{
+                    $(".y1month").css("opacity","0");
+                    $(".y1month").css("z-index","0");
+                    y1month3Hover=false;
+                }
+            })
+            var y1month4Hover=false;
+            $(".y1month .month4").hover(function(){
+                if(y1month4Hover==false){
+                    $(".y1month").css("opacity","1");
+                    $(".y1month").css("z-index","1000");
+                    y1month4Hover=true;
+                }
+                else{
+                    $(".y1month").css("opacity","0");
+                    $(".y1month").css("z-index","0");
+                    y1month4Hover=false;
+                }
+            })
+            year1Hover = true;
+        }
+        else {
+            $(".y1month").css("opacity", "0");
+            $(".y1month").css("z-index", "0");
+            year1Hover = false;
+        }
+    })
+
+    var year2Hover=false;
+    $(".year2").hover(function () {
+        if (year2Hover == false) {
+            $(".y2month").css("opacity", "1");
+            $(".y2month").css("z-index", "1000");
+            var y2month1Hover = false;
+            $(".y2month .month1").hover(function(){
+                if(y2month1Hover==false){
+                    $(".y2month").css("opacity","1");
+                    $(".y2month").css("z-index","1000");
+                    y2month1Hover=true;
+                }
+                else{
+                    $(".y2month").css("opacity","0");
+                    $(".y2month").css("z-index","0");
+                    y2month1Hover=false;
+                }
+            })
+            year2Hover = true;
+        }
+        else {
+            $(".y2month").css("opacity", "0");
+            $(".y2month").css("z-index", "0");
+            year2Hover = false;
+        }
+    })
 }
 else {
     $(".navbar__menu").fadeOut();

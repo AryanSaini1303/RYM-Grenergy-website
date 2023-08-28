@@ -55,11 +55,11 @@ body {
 
 /* @keyframes glow {
     from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px darkgreen, 0 0 40px darkgreen, 0 0 50px darkgreen, 0 0 60px darkgreen;
     }
 
     to {
-        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6;
+        text-shadow: 0 0 20px #fff, 0 0 30px lightgreen, 0 0 40px lightgreen, 0 0 50px lightgreen, 0 0 60px lightgreen, 0 0 70px lightgreen;
     }
 } */
 .navbar {
@@ -288,8 +288,8 @@ body {
     transform: scale(1, 1);
     filter: blur(0);
     display: flex;
-    flex-direction:column;
-    z-index:2;
+    flex-direction: column;
+    z-index: 2;
 }
 
 .col2 {
@@ -297,8 +297,8 @@ body {
     transform: scale(1, 1);
     filter: blur(0);
     display: flex;
-    flex-direction:column;
-    z-index:2;
+    flex-direction: column;
+    z-index: 2;
 }
 
 .col3 {
@@ -306,8 +306,8 @@ body {
     transform: scale(1, 1);
     filter: blur(0);
     display: flex;
-    flex-direction:column;
-    z-index:2;
+    flex-direction: column;
+    z-index: 2;
 }
 
 .col4 {
@@ -315,8 +315,8 @@ body {
     transform: scale(1, 1);
     filter: blur(0);
     display: flex;
-    flex-direction:column;
-    z-index:2;
+    flex-direction: column;
+    z-index: 2;
 }
 
 .nav4Content {
@@ -466,6 +466,99 @@ body {
     color: aliceblue;
     text-shadow: 0.5rem 0.5rem 1.5rem black;
     user-select: none;
+}
+
+.nav2 {
+    display: flex;
+    position: absolute;
+    top: 3.5rem;
+    width: 50%;
+    left: 37.4%;
+    text-align: center;
+}
+
+.text {
+    font-size: 2rem;
+    font-family: 'Signika Negative', sans-serif;
+    color: snow;
+    padding: 0 1.8rem;
+    text-decoration: none;
+    text-align: left;
+}
+
+.year {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.579);
+    height: 50%;
+    opacity: 0;
+    left:2rem;
+}
+
+.y1month {
+    position:relative;
+    background-color: rgba(0, 0, 0, 0.579);
+    opacity: 0;
+    left:2rem;  
+    text-align: center;
+}
+
+.y2month {
+    background-color: rgba(0, 0, 0, 0.579);
+    position: relative;
+    right: 9.25rem;
+    top: 2.5rem;
+    opacity: 0;
+    height:25%;
+}
+
+.y1m1event {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.579);
+    right: 10rem;
+    opacity: 0;
+}
+
+.y1m2event {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.579);
+    right: 18.1rem;
+    top: 3.2rem;
+    height: 75%;
+    opacity: 0;
+}
+
+.y1m3event {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.579);
+    height: 25%;
+    right: 26.18rem;
+    top: 6.4rem;
+    opacity: 0;
+}
+
+.y1m4event {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.579);
+    right: 33.7rem;
+    height: 50%;
+    top: 9.6rem;
+    opacity: 0;
+}
+
+.nav2 a:hover {
+    color: greenyellow;
+    /* font-size: 2.5rem; */
+    font-weight: 100;
+    background-color: rgba(0, 0, 0, 0.662);
+}
+.y1month .month2{
+    padding:0 2.9rem;
+}
+.y1month .month3{
+    padding:0 3.55rem;
+}
+.y1month .month4{
+    padding:0 3.85rem;
 }
 
 
@@ -782,41 +875,48 @@ body {
             opacity: 0;
         }
     }
-    .info{
-        top:4rem;
+
+    .info {
+        top: 4rem;
         font-size: 0.6rem;
-        padding-top:6rem;
+        padding-top: 6rem;
         width: 88%;
         z-index: -1;
         height: 150%;
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
         /* word-spacing: 0.02rem; */
-        text-align:center;
+        text-align: center;
     }
-    .bigDp{
-        animation:bigDp 1s;
-        animation-fill-mode:forwards;
+
+    .bigDp {
+        animation: bigDp 1s;
+        animation-fill-mode: forwards;
     }
+
     @keyframes bigDp {
-        0%{
-            transform:scale(1,1);
+        0% {
+            transform: scale(1, 1);
         }
-        100%{
-            transform:scale(1.5,1.5);
+
+        100% {
+            transform: scale(1.5, 1.5);
         }
     }
-    .bigDpRev{
-        animation:bigDpRev 1s;
-        animation-fill-mode:forwards;
-        animation-direction:normal;
+
+    .bigDpRev {
+        animation: bigDpRev 1s;
+        animation-fill-mode: forwards;
+        animation-direction: normal;
     }
+
     @keyframes bigDpRev {
-        0%{
-            transform:scale(1.5,1.5);
+        0% {
+            transform: scale(1.5, 1.5);
         }
-        100%{
-            transform:scale(1,1);
+
+        100% {
+            transform: scale(1, 1);
         }
     }
 }
