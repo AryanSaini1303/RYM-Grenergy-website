@@ -487,6 +487,8 @@ body {
 }
 
 .year {
+    display: flex;
+    flex-direction: column;
     position: relative;
     background-color: rgba(0, 0, 0, 0.579);
     height: 50%;
@@ -495,6 +497,8 @@ body {
 }
 
 .y1month {
+    display: flex;
+    flex-direction:column;
     position:relative;
     background-color: rgba(0, 0, 0, 0.579);
     opacity: 0;
@@ -514,15 +518,15 @@ body {
 .y1m1event {
     position: relative;
     background-color: rgba(0, 0, 0, 0.579);
-    right: 10rem;
+    right: 8.25rem;
     opacity: 0;
 }
 
 .y1m2event {
     position: relative;
     background-color: rgba(0, 0, 0, 0.579);
-    right: 18.1rem;
-    top: 3.2rem;
+    right: 16.1rem;
+    top: 2.5rem;
     height: 75%;
     opacity: 0;
 }
@@ -531,17 +535,17 @@ body {
     position: relative;
     background-color: rgba(0, 0, 0, 0.579);
     height: 25%;
-    right: 26.18rem;
-    top: 6.4rem;
+    right: 23.95rem;
+    top: 5rem;
     opacity: 0;
 }
 
 .y1m4event {
     position: relative;
     background-color: rgba(0, 0, 0, 0.579);
-    right: 33.7rem;
+    right: 31.9rem;
     height: 50%;
-    top: 9.6rem;
+    top: 7.5rem;
     opacity: 0;
 }
 

@@ -31,6 +31,10 @@ if (mediaQuery.matches) {
             nav1Click = true;
             nav4Click = false;
         }
+        else if (nav2Click == true) {
+            console.log("clicked");
+            $(".nav1").addClass("nav1Animation");
+        }
     })
     $(".bt4").on("click", function () {
         $(".team-heading").animate({ bottom: "15rem" }, "slow");
@@ -168,66 +172,241 @@ if (mediaQuery.matches) {
             $(".y1month").css("opacity", "1");
             $(".y1month").css("z-index", "1000");
             var y1month1Hover = false;
-            $(".y1month .month1").hover(function(){
-                if(y1month1Hover==false){
-                    $(".y1month").css("opacity","1");
-                    $(".y1month").css("z-index","1000");
-                    // var y1m1Event1=false;
-                    // if(y1m1Event1==false){
-                    //     $(".y1m1event").css("opacity","1");
-                    //     $(".y1m1event").css("z-index","1000");
-                    //     y1m1Event1=true;
-                    // }
-                    // else{
-                    //     $(".y1m1event").css("opacity","0");
-                    //     $(".y1m1event").css("z-index","0");
-                    //     y1m1Event1=false;
-                    // }
-                    y1month1Hover=true;
+            $(".y1month .month1").hover(function () {
+                if (y1month1Hover == false) {
+                    $(".y1month").css("opacity", "1");
+                    $(".y1month").css("z-index", "1000");
+                    $(".y1m1event").css("opacity", "1");
+                    $(".y1m1event").css("z-index", "1000");
+                    var y1m1event1Hover = false;
+                    $(".y1m1event .event1").hover(function () {
+                        if (y1m1event1Hover == false) {
+                            $(".y1m1event").css("opacity", "1");
+                            $(".y1m1event").css("z-index", "1000");
+                            $(".y1month").css("opacity", "1");
+                            $(".y1month").css("z-index", "1000");
+                            y1m1event1Hover = true;
+                        }
+                        else {
+                            $(".y1m1event").css("opacity", "0");
+                            $(".y1m1event").css("z-index", "0");
+                            $(".y1month").css("opacity", "0");
+                            $(".y1month").css("z-index", "0");
+                            y1m1event1Hover = false;
+                        }
+                    })
+                    var y1m1event2Hover = false;
+                    $(".y1m1event .event2").hover(function () {
+                        if (y1m1event2Hover == false) {
+                            $(".y1m1event").css("opacity", "1");
+                            $(".y1m1event").css("z-index", "1000");
+                            $(".y1month").css("opacity", "1");
+                            $(".y1month").css("z-index", "1000");
+                            y1m1event2Hover = true;
+                        }
+                        else {
+                            $(".y1m1event").css("opacity", "0");
+                            $(".y1m1event").css("z-index", "0");
+                            $(".y1month").css("opacity", "0");
+                            $(".y1month").css("z-index", "0");
+                            y1m1event2Hover = false;
+                        }
+                    })
+                    var y1m1event3Hover = false;
+                    $(".y1m1event .event3").hover(function () {
+                        if (y1m1event3Hover == false) {
+                            $(".y1m1event").css("opacity", "1");
+                            $(".y1m1event").css("z-index", "1000");
+                            $(".y1month").css("opacity", "1");
+                            $(".y1month").css("z-index", "1000");
+                            y1m1event3Hover = true;
+                        }
+                        else {
+                            $(".y1m1event").css("opacity", "0");
+                            $(".y1m1event").css("z-index", "0");
+                            $(".y1month").css("opacity", "0");
+                            $(".y1month").css("z-index", "0");
+                            y1m1event3Hover = false;
+                        }
+                    })
+                    var y1m1event4Hover = false;
+                    $(".y1m1event .event4").hover(function () {
+                        if (y1m1event4Hover == false) {
+                            $(".y1m1event").css("opacity", "1");
+                            $(".y1m1event").css("z-index", "1000");
+                            $(".y1month").css("opacity", "1");
+                            $(".y1month").css("z-index", "1000");
+                            y1m1event4Hover = true;
+                        }
+                        else {
+                            $(".y1m1event").css("opacity", "0");
+                            $(".y1m1event").css("z-index", "0");
+                            $(".y1month").css("opacity", "0");
+                            $(".y1month").css("z-index", "0");
+                            y1m1event4Hover = false;
+                        }
+                    })
+                    y1month1Hover = true;
                 }
-                else{
-                    $(".y1month").css("opacity","0");
-                    $(".y1month").css("z-index","0");
-                    y1month1Hover=false;
+                else {
+                    $(".y1month").css("opacity", "0");
+                    $(".y1month").css("z-index", "0");
+                    $(".y1m1event").css("opacity", "0");
+                    $(".y1m1event").css("z-index", "0");
+                    y1month1Hover = false;
                 }
             })
-            var y1month2Hover=false;
-            $(".y1month .month2").hover(function(){
-                if(y1month2Hover==false){
-                    $(".y1month").css("opacity","1");
-                    $(".y1month").css("z-index","1000");
-                    y1month2Hover=true;
+            var y1month2Hover = false;
+            $(".y1month .month2").hover(function () {
+                if (y1month2Hover == false) {
+                    $(".y1month").css("opacity", "1");
+                    $(".y1month").css("z-index", "1000");
+                    $(".y1m2event").css("opacity", "1");
+                    $(".y1m2event").css("z-index", "1000");
+                    var y1m2event1Hover = false;
+                    $(".y1m2event .event1").hover(function () {
+                        if (y1m2event1Hover == false) {
+                            $(".y1m2event").css("opacity", "1");
+                            $(".y1m2event").css("z-index", "1000");
+                            $(".y1month").css("opacity", "1");
+                            $(".y1month").css("z-index", "1000");
+                            y1m2event1Hover = true;
+                        }
+                        else {
+                            $(".y1m2event").css("opacity", "0");
+                            $(".y1m2event").css("z-index", "0");
+                            $(".y1month").css("opacity", "0");
+                            $(".y1month").css("z-index", "0");
+                            y1m2event1Hover = false;
+                        }
+                    })
+                    var y1m2event2Hover = false;
+                    $(".y1m2event .event2").hover(function () {
+                        if (y1m2event2Hover == false) {
+                            $(".y1m2event").css("opacity", "1");
+                            $(".y1m2event").css("z-index", "1000");
+                            $(".y1month").css("opacity", "1");
+                            $(".y1month").css("z-index", "1000");
+                            y1m2event2Hover = true;
+                        }
+                        else {
+                            $(".y1m2event").css("opacity", "0");
+                            $(".y1m2event").css("z-index", "0");
+                            $(".y1month").css("opacity", "0");
+                            $(".y1month").css("z-index", "0");
+                            y1m2event2Hover = false;
+                        }
+                    })
+                    var y1m2event3Hover = false;
+                    $(".y1m2event .event3").hover(function () {
+                        if (y1m2event3Hover == false) {
+                            $(".y1m2event").css("opacity", "1");
+                            $(".y1m2event").css("z-index", "1000");
+                            $(".y1month").css("opacity", "1");
+                            $(".y1month").css("z-index", "1000");
+                            y1m2event3Hover = true;
+                        }
+                        else {
+                            $(".y1m2event").css("opacity", "0");
+                            $(".y1m2event").css("z-index", "0");
+                            $(".y1month").css("opacity", "0");
+                            $(".y1month").css("z-index", "0");
+                            y1m2event3Hover = false;
+                        }
+                    })
+                    y1month2Hover = true;
                 }
-                else{
-                    $(".y1month").css("opacity","0");
-                    $(".y1month").css("z-index","0");
-                    y1month2Hover=false;
+                else {
+                    $(".y1month").css("opacity", "0");
+                    $(".y1month").css("z-index", "0");
+                    $(".y1m2event").css("opacity", "0");
+                    $(".y1m2event").css("z-index", "0");
+                    y1month2Hover = false;
                 }
             })
-            var y1month3Hover=false;
-            $(".y1month .month3").hover(function(){
-                if(y1month3Hover==false){
-                    $(".y1month").css("opacity","1");
-                    $(".y1month").css("z-index","1000");
-                    y1month3Hover=true;
+            var y1month3Hover = false;
+            $(".y1month .month3").hover(function () {
+                if (y1month3Hover == false) {
+                    $(".y1month").css("opacity", "1");
+                    $(".y1month").css("z-index", "1000");
+                    $(".y1m3event").css("opacity", "1");
+                    $(".y1m3event").css("z-index", "1000");
+                    var y1m3event1Hover = false;
+                    $(".y1m3event .event1").hover(function () {
+                        if (y1m3event1Hover == false) {
+                            $(".y1m3event").css("opacity", "1");
+                            $(".y1m3event").css("z-index", "1000");
+                            $(".y1month").css("opacity", "1");
+                            $(".y1month").css("z-index", "1000");
+                            y1m3event1Hover = true;
+                        }
+                        else {
+                            $(".y1m3event").css("opacity", "0");
+                            $(".y1m3event").css("z-index", "0");
+                            $(".y1month").css("opacity", "0");
+                            $(".y1month").css("z-index", "0");
+                            y1m3event1Hover = false;
+                        }
+                    })
+                    y1month3Hover = true;
                 }
-                else{
-                    $(".y1month").css("opacity","0");
-                    $(".y1month").css("z-index","0");
-                    y1month3Hover=false;
+                else {
+                    $(".y1month").css("opacity", "0");
+                    $(".y1month").css("z-index", "0");
+                    $(".y1m3event").css("opacity", "0");
+                    $(".y1m3event").css("z-index", "0");
+                    y1month3Hover = false;
                 }
             })
-            var y1month4Hover=false;
-            $(".y1month .month4").hover(function(){
-                if(y1month4Hover==false){
-                    $(".y1month").css("opacity","1");
-                    $(".y1month").css("z-index","1000");
-                    y1month4Hover=true;
+            var y1month4Hover = false;
+            $(".y1month .month4").hover(function () {
+                if (y1month4Hover == false) {
+                    $(".y1month").css("opacity", "1");
+                    $(".y1month").css("z-index", "1000");
+                    $(".y1m4event").css("opacity", "1");
+                    $(".y1m4event").css("z-index", "1000");
+                    var y1m4event1Hover = false;
+                    $(".y1m4event .event1").hover(function () {
+                        if (y1m4event1Hover == false) {
+                            $(".y1m4event").css("opacity", "1");
+                            $(".y1m4event").css("z-index", "1000");
+                            $(".y1month").css("opacity", "1");
+                            $(".y1month").css("z-index", "1000");
+                            y1m4event1Hover = true;
+                        }
+                        else {
+                            $(".y1m4event").css("opacity", "0");
+                            $(".y1m4event").css("z-index", "0");
+                            $(".y1month").css("opacity", "0");
+                            $(".y1month").css("z-index", "0");
+                            y1m4event1Hover = false;
+                        }
+                    })
+                    var y1m4event2Hover = false;
+                    $(".y1m4event .event2").hover(function () {
+                        if (y1m4event2Hover == false) {
+                            $(".y1m4event").css("opacity", "1");
+                            $(".y1m4event").css("z-index", "1000");
+                            $(".y1month").css("opacity", "1");
+                            $(".y1month").css("z-index", "1000");
+                            y1m4event2Hover = true;
+                        }
+                        else {
+                            $(".y1m4event").css("opacity", "0");
+                            $(".y1m4event").css("z-index", "0");
+                            $(".y1month").css("opacity", "0");
+                            $(".y1month").css("z-index", "0");
+                            y1m4event2Hover = false;
+                        }
+                    })
+                    y1month4Hover = true;
                 }
-                else{
-                    $(".y1month").css("opacity","0");
-                    $(".y1month").css("z-index","0");
-                    y1month4Hover=false;
+                else {
+                    $(".y1month").css("opacity", "0");
+                    $(".y1month").css("z-index", "0");
+                    $(".y1m4event").css("opacity", "0");
+                    $(".y1m4event").css("z-index", "0");
+                    y1month4Hover = false;
                 }
             })
             year1Hover = true;
@@ -239,22 +418,22 @@ if (mediaQuery.matches) {
         }
     })
 
-    var year2Hover=false;
+    var year2Hover = false;
     $(".year2").hover(function () {
         if (year2Hover == false) {
             $(".y2month").css("opacity", "1");
             $(".y2month").css("z-index", "1000");
             var y2month1Hover = false;
-            $(".y2month .month1").hover(function(){
-                if(y2month1Hover==false){
-                    $(".y2month").css("opacity","1");
-                    $(".y2month").css("z-index","1000");
-                    y2month1Hover=true;
+            $(".y2month .month1").hover(function () {
+                if (y2month1Hover == false) {
+                    $(".y2month").css("opacity", "1");
+                    $(".y2month").css("z-index", "1000");
+                    y2month1Hover = true;
                 }
-                else{
-                    $(".y2month").css("opacity","0");
-                    $(".y2month").css("z-index","0");
-                    y2month1Hover=false;
+                else {
+                    $(".y2month").css("opacity", "0");
+                    $(".y2month").css("z-index", "0");
+                    y2month1Hover = false;
                 }
             })
             year2Hover = true;
