@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            
+            animation: infinite slide 2s;
+        }   
+        @keyframes slide {
+            0%{
+                right:-18rem;
+            }
+            25%{
+                right:-5rem;
+            }
+            50%{
+                right:0rem;
+            }
+            75%{
+                right:5rem;
+            }
+            100%{
+                right:10rem;
+            }
+        }
+        .carousel{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            overflow: hidden;
+            width: 20%;
+            height: 30%;
+            top:30%;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="carousel">
+            <img src="./layers/director's images/Mohit.jpg" alt="">
+            <img src="./layers/director's images/Rohan.jpg" alt="">
+            <img src="./layers/director's images/Yograj.jpg" alt="">
+            <img src="./layers/director's images/Shubham.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
